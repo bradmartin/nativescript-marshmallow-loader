@@ -1,0 +1,12 @@
+//default elements
+android {
+    productFlavors {
+        "nativescriptmarshmallowloader" {
+            dimension "nativescriptmarshmallowloader"
+        }
+    }
+}
+
+dependencies {
+    compile 'com.cleveroad:androidmanimation:0.9.1'
+}

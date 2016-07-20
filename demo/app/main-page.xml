@@ -1,0 +1,13 @@
+<Page 
+  xmlns="http://schemas.nativescript.org/tns.xsd" 
+  xmlns:Marshmallow="nativescript-marshmallow-loader" loaded="pageLoaded">
+  <ActionBar title="Marshmallow Loader" />
+  <StackLayout>
+    <Marshmallow:MarshmallowLoader id="marshmallow" height="140" />
+    <StackLayout orientation="horizontal">
+      <Button text="Pause" tap="{{ pauseIt }}" />
+      <Button text="Play" tap="{{ playIt }}" />
+      <Button text="Stop" tap="{{ stopIt }}" />
+    </StackLayout> 
+  </StackLayout>
+</Page>
