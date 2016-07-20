@@ -8,6 +8,7 @@
       <Button text="Pause" tap="{{ pauseIt }}" />
       <Button text="Play" tap="{{ playIt }}" />
       <Button text="Stop" tap="{{ stopIt }}" />
-    </StackLayout> 
+    </StackLayout>
+    <!--<Button text="Show Dialog" tap="{{ showAnimationDialog }}" />-->
   </StackLayout>
 </Page>

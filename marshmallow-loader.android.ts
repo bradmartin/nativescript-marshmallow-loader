@@ -6,8 +6,20 @@
 * Open Source Lib : https://github.com/Cleveroad/CRAndroidMBootAnimationView
 *************************************************************************************/
 import { View } from "ui/core/view";
-
+import { Color } from "color";
+import { Page } from "ui/page";
+import { Frame, AndroidFrame } from "ui/frame";
+import * as app from "application";
 declare var android, com: any;
+
+interface DialogOptions {
+    backgroundColor: string,
+    firstColor: string,
+    secondColor: string,
+    thirdColor: string,
+    fourthColor: string,
+    speedCoefficient: number
+}
 
 export class MarshmallowLoader extends View {
     private _androidViewId: number;
@@ -43,6 +55,21 @@ export class MarshmallowLoader extends View {
     public stopAnimation() {
         this._android.stopAnimation();
     }
+
+
+    // public showDialog(DialogOptions) {
+    //     let fragMgr = app.android.startActivity || app.android.foregroundActivity;
+    //     let AnimationDialogFragment = com.cleveroad.androidmanimation.AnimationDialogFragment;
+    //     let fragment = new AnimationDialogFragment.Builder()
+    //         .setBackgroundColor(new Color(DialogOptions.backgroundColor).android)
+    //         .setFirstColor(new Color(DialogOptions.firstColor).android)
+    //         .setSecondColor(new Color(DialogOptions.secondColor).android)
+    //         .setThirdColor(new Color(DialogOptions.thirdColor).android)
+    //         .setFourthColor(new Color(DialogOptions.fourthColor).android)
+    //         .setSpeedCoefficient(DialogOptions.speedCoefficient)
+    //         .build();
+    //     fragment.show(fragMgr.getFragmentManager(), "Animation");
+    // }
 
 
 }

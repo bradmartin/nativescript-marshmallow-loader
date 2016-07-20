@@ -6,13 +6,11 @@ import { MarshmallowLoader } from 'nativescript-marshmallow-loader';
 export class HelloWorldModel extends Observable {
   private _marshmallow: MarshmallowLoader;
 
-  constructor(page: Page) {
+  constructor(mainPage: Page) {
     super();
 
-    let p: Page = page;
-    // this._marshmallow = <MarshmallowLoader>topmost().getViewById('marshmallow');
-    this._marshmallow = <MarshmallowLoader>p.getViewById('marshmallow');
-    console.log('this._marshmallow: ' + this._marshmallow);
+    let page: Page = mainPage;
+    this._marshmallow = <MarshmallowLoader>page.getViewById('marshmallow');
   }
 
 
@@ -27,6 +25,19 @@ export class HelloWorldModel extends Observable {
   public stopIt() {
     this._marshmallow.stopAnimation();
   }
+
+  // public showAnimationDialog() {
+  //   let marsh = new MarshmallowLoader();
+  //   marsh.showDialog(
+  //     {
+  //       backgroundColor: '#555',
+  //       firstColor: '#3489db',
+  //       secondColor: '#ff4801',
+  //       thirdColor: '#dedede',
+  //       fourthColor: '#336699',
+  //       speedCoefficient: 2
+  //     });
+  // }
 
 
 }

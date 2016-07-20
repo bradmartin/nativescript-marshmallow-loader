@@ -31,6 +31,20 @@ declare module "nativescript-marshmallow-loader" {
          */
         stopAnimation();
 
+        /**
+         * Display the loading animation in a dialog.
+         */
+        // showDialog(DialogOptions);
+
     }
+
+    // export interface DialogOptions {
+    //     backgroundColor: string,
+    //     firstColor: string,
+    //     secondColor: string,
+    //     thirdColor: string,
+    //     fourthColor: string,
+    //     speedCoefficient: number
+    // }
 
 }
